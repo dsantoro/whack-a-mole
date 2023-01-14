@@ -1,8 +1,9 @@
+import { StaticImageData } from 'next/image';
 import React, { useRef, useEffect } from 'react';
 import * as S from './style';
 
 interface IFollowMouseImage {
-  src: string;
+  src: string | StaticImageData;
 }
 
 const FollowMouseImage = ({ src }: IFollowMouseImage) => {
