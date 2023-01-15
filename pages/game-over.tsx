@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Background } from '@/components/Background/style';
 import Container from '@/components/Container';
 import Button from '@/components/Button';
+import LeaderBoard from '@/components/LeaderBoard';
 
 export default function GameOver() {
   const { leaderBoard, score, resetScore } = useGame();
@@ -18,9 +19,8 @@ export default function GameOver() {
       <h1>Game Over</h1>
       <h2> Your score {score}</h2>
       <Button path="/game" onClick={() => resetScore()}>Play again!</Button>
-      <ul>
-        {sortedLeaderBoard.map(item => <li key={item}>{item}</li>)}
-      </ul>
+      <hr />
+      <LeaderBoard scores={sortedLeaderBoard} />
     </Container>
   )
 }

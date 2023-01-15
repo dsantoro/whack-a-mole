@@ -17,13 +17,14 @@ export function useGame() {
 
 export const GameProvider = ({ children }: any) => {
   const [score, setScore] = useState<number>(0);
-  const [leaderBoard, setLeaderBoard] = useState([10]);
+  const [leaderBoard, setLeaderBoard] = useState([]);
   const updateScore = () => {
     setScore(prev => prev + 1)
   };
 
   const updateLeaderBoard = (score: number) => {
-    setLeaderBoard(prev => [...prev, score])
+    // @ts-ignore
+    setLeaderBoard(prev => [...prev, score]);
   }
 
   const resetScore = () => {

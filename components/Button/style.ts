@@ -3,8 +3,6 @@ import Link from "next/link";
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
 `
 
 export const Button = styled(Link)`

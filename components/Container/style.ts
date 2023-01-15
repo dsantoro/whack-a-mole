@@ -11,4 +11,5 @@ export const Container = styled.div`
   justify-content: center;
   background-image: url('../../assets/WAM_bg.jpg');
   overflow: hidden;
+  align-items: center;
 `

@@ -36,9 +36,31 @@ pre {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem
 }
+
 h2, h3, h4, h5 ,h6 {
   color: rgba(0, 0, 0, .8);
   font-weight: 300;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+hr {
+  width: 100%;
+  margin: 2rem 0;
 }
 `
 
