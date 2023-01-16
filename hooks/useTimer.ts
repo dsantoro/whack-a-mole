@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export const useTimer = () => {
-  const [minutes, setMinutes] = useState(1);
+  const [minutes, setMinutes] = useState(2);
   const [seconds, setSeconds] = useState(0);
   const [timesUp, setTimesUp] = useState<boolean>(false)
 
