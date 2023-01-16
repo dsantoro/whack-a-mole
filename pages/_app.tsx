@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
-        <title>Gaming 1 Frontend Assessment</title>
+        <title>Whack-a-mole</title>
       </Head>
       <Component {...pageProps} />
     </GameProvider>
