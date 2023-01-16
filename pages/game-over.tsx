@@ -11,7 +11,7 @@ export default function GameOver() {
     if (a > b) return -1;
     if (a < b) return +1;
     return 0;
-  });
+  }).slice(0, 10);
 
   return (
     <Container>
